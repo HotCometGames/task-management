@@ -379,6 +379,44 @@ input, select, textarea {
   white-space: nowrap;
 }
 
+.toolbar-spacer {
+  flex: 1;
+}
+
+.github-widget {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  text-decoration: none;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: border-color var(--ease), background var(--ease), color var(--ease);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.github-widget:hover {
+  border-color: var(--border-hover);
+  background: var(--surface-hover);
+  color: var(--ink);
+}
+
+.github-widget-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.github-widget-stat {
+  line-height: 1;
+}
+
 .toolbar-controls {
   display: flex;
   gap: 8px;

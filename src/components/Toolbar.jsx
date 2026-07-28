@@ -1,5 +1,6 @@
 import React from 'react';
 import InlineEditableText from './InlineEditableText.jsx';
+import GitHubWidget from './GitHubWidget.jsx';
 import { STATUS_OPTIONS, PRIORITY_OPTIONS } from '../store.js';
 
 export default function Toolbar({
@@ -32,6 +33,8 @@ export default function Toolbar({
         <span className="item-count-badge">
           {filtersActive ? `${filteredCount} of ${itemCount} items` : `${itemCount} items`}
         </span>
+        <span className="toolbar-spacer" />
+        <GitHubWidget />
       </div>
 
       <div className="toolbar-controls">
