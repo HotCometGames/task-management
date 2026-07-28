@@ -1,20 +1,20 @@
 const STORAGE_KEY = 'boardwork-data-v1';
 
 export const STATUS_OPTIONS = [
-  { label: 'Not Started', color: '#B7BAC5' },
-  { label: 'Working on it', color: '#F5A623' },
-  { label: 'Stuck', color: '#E4573D' },
-  { label: 'Done', color: '#2FB380' },
+  { label: 'Not Started', color: '#94A3B8' },
+  { label: 'Working on it', color: '#F59E0B' },
+  { label: 'Stuck', color: '#EF4444' },
+  { label: 'Done', color: '#10B981' },
 ];
 
 export const PRIORITY_OPTIONS = [
   { label: 'Low', color: '#8FA6D6' },
   { label: 'Medium', color: '#F2B84B' },
   { label: 'High', color: '#EF7B45' },
-  { label: 'Critical', color: '#D64550' },
+  { label: 'Critical', color: '#EF4444' },
 ];
 
-export const GROUP_COLORS = ['#4B4FE0', '#2FB380', '#F5A623', '#E4573D', '#6B7080', '#A13D9E'];
+export const GROUP_COLORS = ['#5B6AD0', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#EC4899', '#0EA5E9'];
 
 let counter = 0;
 export function makeId(prefix = 'id') {
